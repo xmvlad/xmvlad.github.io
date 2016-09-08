@@ -12,6 +12,7 @@ In most real DNN models we operate on vectors/tensors from real line (R^N), and 
 The idea to move from world of real line/manifolds/etc to boolean logic and discret (0,1) state. Some one may thought, that this toy model will have very little connection to reality, but there exist research that use such binary models to train on real datasets and they perform surprisingly well http://arxiv.org/pdf/1511.00363v3.pdf.
 
 A first step to toy model aproximation, activation function for layers, 
+<br>
 <pre>
 y= sign(x0*w0+x1*w1+..+xn*wn), where x0..xn,w0..wn takes on {-1, +1 }.
 </pre>
