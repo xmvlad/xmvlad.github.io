@@ -9,13 +9,13 @@ There very little known why deep learning models, espessially convolution nets, 
 The task of this note to develop some simple theorethical toy model for DNN to shead some light on it grounds.
 In most real DNN models we operate on vectors/tensors from real line (R^N), and math to analyze full scale model mostly untractable. 
 The idea to move from world of real line/manifolds/etc to boolean logic and discret (0,1) state. Some one may thought, that this toy model will have very little connection to reality, but there exist research that use such binary models to train on real datasets and they perform 
-surprisingly well [This link](http://arxiv.org/pdf/1511.00363v3.pdf) .
+surprisingly well [http://arxiv.org/pdf/1511.00363v3.pdf](http://arxiv.org/pdf/1511.00363v3.pdf) .
 
 A first step to toy model aproximation, activation function for layers, 
 
 	y= sign(x0*w0+x1*w1+..+xn*wn)
 
-, where x0..xn,w0..wn takes on {-1, +1 }.
+, where x0..xn,w0..wn takes on **{-1, +1 }**.
 
 At next step we transform activation to boolean algebra, at this stage we use math over GF(2) (mod 2 arithmetic) and n-arity majority function maj, y = maj(x0+w0,x1+w1,x2+w2,..,xn+wn) (changed * to +, because it just xor)
 Now we simplify further, and take majority with arity = 3. At this point some simple structure with two deep leveles and stride=1, can be drawn, like:
