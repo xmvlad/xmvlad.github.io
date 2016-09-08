@@ -54,7 +54,7 @@ where x0*x1+x1*x2+x0*x2 is the same majority function maj(x0,x1,x2)
 
 In general for single layer, we have some matrix(linear operator) acting on input vector X, and non-linear MAJ added.
 We have:
-	Y_n = L_n(X) + MAJ(X), where L_n, n-level operator with matrix of coefficients, MAJ - majority operator not containing any tunable coefficients.
+	Y_n = L_n(X) + MAJ(X), where L_n, n-level **linear operator** with matrix of coefficients, MAJ - majority operator not containing any tunable coefficients.
 Or if we take two layer deep:
 
 	Y_1 = L_1(X) + MAJ(X)
