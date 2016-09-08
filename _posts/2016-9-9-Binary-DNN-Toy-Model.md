@@ -38,12 +38,13 @@ or at GF(2):
            w00*w01+w01*w02+w00*w02+
            x0*(w01+w02)+x1*(w00+w02)+x2*(w01+w00)+
            x0*x1+x1*x2+x0*x2
+
 we just can replace w coefficients, with some other new constants c, then:
 
 	y0=x0*c00+x1*c01+x2*c02+x0*x1+x1*x2+x0*x2 or
 	y0=[c00 c01 c02]x[x0 x1 x2]^T + x0*x1+x1*x2+x0*x2
 
- where x0*x1+x1*x2+x0*x2 is the same majority function maj(x0,x1,x2)
+where x0*x1+x1*x2+x0*x2 is the same majority function maj(x0,x1,x2)
 
 	y0 = [c00 c01 c02]x[x0 x1 x2]^T + maj(x0, x1, x2)
 	y1 = [c10 c11 c12]x[x1 x2 x3]^T + maj(x1, x2, x3)
