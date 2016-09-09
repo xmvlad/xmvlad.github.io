@@ -5,7 +5,7 @@ title: Is binary DNN model convex?
 
 Is binary DNN model convex?
 
-Another thought that we can take from previous post about our binary DNN model, that it's main non-linear element majority function in fact quadratic, and so convex from definition(at least at GF(2)).
+Another thought that we can take from previous post about our binary DNN model, that it's main non-linear element majority function in fact quadratic form, and so convex from definition(at least at GF(2)).
 Put in simple, let's take single activation unit:
 
     y0 = sign(w0*x0 + w1*x1 + .. + wn*xn)
