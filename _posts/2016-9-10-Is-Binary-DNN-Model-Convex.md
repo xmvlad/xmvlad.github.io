@@ -32,9 +32,9 @@ where maj is simple:
 
 Can we construct maj as quadratic form? Let's try:
 
-	                     [ 0 1 0 ]   [ x ]
+                             [ 0 1 0 ]   [ x ]
     maj(x, y, z) = [x y z] x [ 0 0 1 ] x [ y ] - 2*x*y*z
-	                     [ 1 0 0 ]   [ z ]
+                             [ 1 0 0 ]   [ z ]
                          
 so it's almost quadratic form, but what is critical, it's still **convex**. 
 (and what about maj with arbitrary arity? if a fact fancy area of algebra exists, named median algebra, that show arbitrary arity can be constructed from 3-arity majority function)
